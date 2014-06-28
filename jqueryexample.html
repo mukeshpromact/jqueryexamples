@@ -4,9 +4,21 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
-  });
+    $("p").mouseenter(function(){
+    alert("You entered p1!");
+    });
+    $("p").mouseleave(function(){
+      alert("Bye! You now leave p1!");
+    });
+    $("p").mousedown(function(){
+      alert("Mouse down over p1!");
+    });
+    $("p").mouseup(function(){
+      alert("Mouse up over p1!");
+    });
+    $("p").click(function(){
+      $(this).hide();
+    });
 });
 </script>
 </head>
