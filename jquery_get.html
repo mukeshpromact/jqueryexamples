@@ -11,12 +11,14 @@ $(document).ready(function(){
     alert("HTML: " + $("#test").html());
   });
 });
+$(document).on('click', '#btn1', function(event) {
+    alert("hiii");
+});
 </script>
 </head>
 
 <body>
 <p id="test">This is some <b>bold</b> text in a paragraph.</p>
-<button id="btn1">Show Text</button>
 <button id="btn2">Show HTML</button>
 </body>
 </html>
